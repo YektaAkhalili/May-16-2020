@@ -17,6 +17,9 @@ request_for_hosts = ["Ford", "William", "Dolores", "Teddy"]
 
 check_host_avail() #this says Dolores isn't available 
 request_for_hosts.pop(2)
+
+#also can do this if you don't know where Dolores is located: 
+#request_for_hosts.remove("Dolores")
 for request in request_for_hosts:
 	if request in hosts:
 		print("You can meet with: ", request)
